@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eeeeef0;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #eeeeef0;
+  padding: 100px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content .time {
+  font-size: 20px;
+}
+
+.header-content .icons img {
+  height: 20px;
+  margin-left: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+.account-summary {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.account-card, .card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.actions {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  background-color: #ffffff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.action-buttons button:last-child {
+  margin-right: 0;
+}
+
+.promotions {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.promotions img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-nav button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #4CAF50;
+  cursor: pointer;
+  padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    z-index: 0; /* Ensure it stays behind other content */
+}
+
+body {
+    margin-top: env(safe-area-inset-top); /* For newer iPhones with a notch */
+    padding-top: 20px; /* Adjust this value as needed */
+}
