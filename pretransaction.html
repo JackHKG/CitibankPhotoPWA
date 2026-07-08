@@ -20,13 +20,16 @@
 
 
   <style>
-    body {
+        .container {
+            padding-top: env(safe-area-inset-top); /* For newer iPhones with a notch */
+            padding-top: 270px; /* Adjust this value as needed */
+        }
+       body {
         margin: 0;
         background-color: #EEEEF0;
-        padding-top: 44px;                          /* fallback for older iPhones */
-        padding-top: env(safe-area-inset-top);      /* Dynamic Island + status bar */
+        padding-top: env(safe-area-inset-top);     /* Simple fix for Dynamic Island */
     }
-</style>
+    </style>
   
 </head>
 <body>
