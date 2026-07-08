@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <link rel="manifest" href="manifest.json">
   <title>My PWA</title>
   <link rel="apple-touch-icon" href="icon.png">
@@ -21,52 +20,6 @@
         .container {
             padding-top: env(safe-area-inset-top); /* For newer iPhones with a notch */
             padding-top: 270px; /* Adjust this value as needed */
-        }
-    </style>
-  <style>
-    /* Existing styles */
-    body {
-        margin: 0;
-        background-color: #EEEEF0;
-    }
-
-    /* New: Top block that hides everything near Dynamic Island */
-    .dynamic-island-cover {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: env(safe-area-inset-top);           /* Automatically matches Dynamic Island + status bar */
-        background-color: #EEEEF0;                  /* Match your page background */
-        z-index: 9999;                              /* Put it on top of everything */
-        pointer-events: none;                       /* Allow taps to go through */
-    }
-
-    /* Optional: Also push your main content down */
-    main, .content, body > *:first-child {
-        padding-top: env(safe-area-inset-top);
-    }
-
-        body {
-            margin: 0;
-            background-color: #EEEEF0; /* White background for the entire page */
-        }
-
-        .content {
-            padding-top: env(safe-area-inset-top);
-            padding-bottom: env(safe-area-inset-bottom);
-            padding-left: env(safe-area-inset-left);
-            padding-right: env(safe-area-inset-right);
-        }
-
-        /* Fallback for older browsers that do not support env() */
-        @supports not (padding-top: env(safe-area-inset-top)) {
-            .content {
-                padding-top: 100px;
-                padding-bottom: 100px;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
         }
     </style>
 
@@ -90,7 +43,6 @@
   
 </head>
 <body>
-  <div class="dynamic-island-cover"></div>
   <main>
     <div class="container">
     <img src="Transaction.jpg" usemap="#estatement" alt="Clickable Image">
