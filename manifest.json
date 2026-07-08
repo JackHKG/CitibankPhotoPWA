@@ -1,0 +1,13 @@
+{
+  "name": "Citibank HK",
+  "short_name": "Citibank HK",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#EEEEF0",
+  "theme_color": "#EEEEF0",
+  "icons": [ 
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"]
+}
